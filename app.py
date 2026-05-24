@@ -6,9 +6,11 @@ Created on Sat May 23 16:59:34 2026
 @author: loki
 """
 
-import numpy as np
-import streamlit as st
 import pickle
+import numpy as np
+import pandas as pd
+import streamlit as st
+from sklearn.ensemble import RandomForestClassifier
 loaded_model=pickle.load(open('model.pkl','rb'))
 
 def wine_quality_prediction(input_data):
