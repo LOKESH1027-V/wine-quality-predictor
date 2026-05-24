@@ -9,7 +9,7 @@ Created on Sat May 23 16:59:34 2026
 import numpy as np
 import streamlit as st
 import pickle
-loaded_model=pickle.load(open('/home/loki/Developer/Ml/Project/Winequality/trained_model.sav','rb'))
+loaded_model=pickle.load(open('model.pkl','rb'))
 
 def wine_quality_prediction(input_data):
     np_array=np.asarray(input_data)
